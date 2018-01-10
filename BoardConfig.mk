@@ -94,3 +94,4 @@ TARGET_USERIMAGES_USE_F2FS := true
 TW_NEW_ION_HEAP := true
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_INCLUDE_NTFS_3G := true
