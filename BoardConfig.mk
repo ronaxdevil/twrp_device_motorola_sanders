@@ -43,9 +43,6 @@ TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOOTLOADER_BOARD_NAME := MSM8953
 TARGET_NO_BOOTLOADER := true
 
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/boot.img-zImage
-#TARGET_PREBUILT_DTB := $(DEVICE_PATH)/boot.img-dt
-
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 vmalloc=350M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -64,7 +61,7 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 
 LZMA_RAMDISK_TARGETS := recovery
 
-#BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QCOM_HARDWARE := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -80,7 +77,6 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_CRYPTO := true
-#TARGET_CRYPTFS_HW_PATH := device/motorola/potter/cryptfs_hw
 
 # TWRP
 RECOVERY_VARIANT := twrp
