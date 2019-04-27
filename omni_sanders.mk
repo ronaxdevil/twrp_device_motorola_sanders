@@ -14,12 +14,9 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := potter
-PRODUCT_NAME := full_potter
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G5 Plus
-PRODUCT_MANUFACTURER := motorola
+$(call inherit-product, device/motorola/sanders/full_sanders.mk)
+
+PRODUCT_NAME := omni_sanders

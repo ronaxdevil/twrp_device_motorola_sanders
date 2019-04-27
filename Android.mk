@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter potter, $(TARGET_DEVICE)),)
+ifneq ($(filter sanders, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
